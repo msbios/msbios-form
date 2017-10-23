@@ -16,11 +16,11 @@ interface FormElementAwareInterface
     /**
      * @return FormInterface
      */
-    public function getForm();
+    public function getFormElement();
 
     /**
-     * @param FormInterface $form
+     * @param FormInterface $formElement
      * @return $this
      */
-    public function setForm(FormInterface $form);
+    public function setFormElement(FormInterface $formElement);
 }
