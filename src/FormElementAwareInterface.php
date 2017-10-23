@@ -8,10 +8,10 @@ namespace MSBios\Form;
 use Zend\Form\FormInterface;
 
 /**
- * Interface FormAwareInterface
+ * Interface FormElementAwareInterface
  * @package MSBios\Form
  */
-interface FormAwareInterface
+interface FormElementAwareInterface
 {
     /**
      * @return FormInterface

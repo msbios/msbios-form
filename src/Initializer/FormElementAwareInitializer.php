@@ -7,15 +7,15 @@
 namespace MSBios\Form\Initializer;
 
 use Interop\Container\ContainerInterface;
-use MSBios\Form\FormAwareInterface;
+use MSBios\Form\FormElementAwareInterface;
 use Zend\Form\FormElementManager\FormElementManagerV3Polyfill;
 use Zend\ServiceManager\Initializer\InitializerInterface;
 
 /**
- * Class FormAwareInitializer
+ * Class FormElementAwareInitializer
  * @package MSBios\Form\Initializer
  */
-class FormAwareInitializer implements InitializerInterface
+class FormElementAwareInitializer implements InitializerInterface
 {
     /**
      * Initialize the given instance
@@ -26,7 +26,7 @@ class FormAwareInitializer implements InitializerInterface
      */
     public function __invoke(ContainerInterface $container, $instance)
     {
-        if ($instance instanceof FormAwareInterface) {
+        if ($instance instanceof FormElementAwareInterface) {
 
             /** @var string $className */
             $className = get_class($instance);
@@ -44,7 +44,7 @@ class FormAwareInitializer implements InitializerInterface
 
     /**
      * @param $an_array
-     * @return FormAwareInitializer
+     * @return FormElementAwareInitializer
      */
     public static function __set_state($an_array)
     {

@@ -8,29 +8,29 @@ namespace MSBios\Form;
 use Zend\Form\FormInterface;
 
 /**
- * Trait FormAwareTrait
+ * Trait FormElementAwareTrait
  * @package MSBios\Form
  */
-trait FormAwareTrait
+trait FormElementAwareTrait
 {
     /** @var FormInterface */
-    protected $form;
+    protected $formElement;
 
     /**
      * @return FormInterface
      */
-    public function getForm(): FormInterface
+    public function getFormElement(): FormInterface
     {
-        return $this->form;
+        return $this->formElement;
     }
 
     /**
-     * @param FormInterface $form
+     * @param FormInterface $formElement
      * @return $this
      */
-    public function setForm(FormInterface $form)
+    public function setFormElement(FormInterface $formElement)
     {
-        $this->form = $form;
+        $this->formElement = $formElement;
         return $this;
     }
 }
