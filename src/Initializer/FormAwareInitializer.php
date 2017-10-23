@@ -12,10 +12,10 @@ use Zend\Form\FormElementManager\FormElementManagerV3Polyfill;
 use Zend\ServiceManager\Initializer\InitializerInterface;
 
 /**
- * Class FormInitializer
+ * Class FormAwareInitializer
  * @package MSBios\Form\Initializer
  */
-class FormInitializer implements InitializerInterface
+class FormAwareInitializer implements InitializerInterface
 {
     /**
      * Initialize the given instance
@@ -44,7 +44,7 @@ class FormInitializer implements InitializerInterface
 
     /**
      * @param $an_array
-     * @return FormInitializer
+     * @return FormAwareInitializer
      */
     public static function __set_state($an_array)
     {
