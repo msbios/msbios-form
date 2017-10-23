@@ -35,7 +35,7 @@ class FormElementAwareInitializer implements InitializerInterface
             $formElementManager = $container->get('FormElementManager');
 
             if ($formElementManager->has($className)) {
-                $instance->setForm(
+                $instance->setFormElement(
                     $formElementManager->get($className)
                 );
             }
