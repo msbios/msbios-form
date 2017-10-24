@@ -16,6 +16,8 @@ use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
  */
 class Module implements ModuleInterface, AutoloaderProviderInterface
 {
+    const VERSION = '1.0.6';
+
     /**
      * Returns configuration to merge with application configuration
      *
