@@ -3,7 +3,6 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-
 namespace MSBios\Form\Initializer;
 
 use Interop\Container\ContainerInterface;
@@ -12,10 +11,10 @@ use Zend\Form\FormElementManager\FormElementManagerV3Polyfill;
 use Zend\ServiceManager\Initializer\InitializerInterface;
 
 /**
- * Class FormElementAwareInitializer
+ * Class FormElementInitializer
  * @package MSBios\Form\Initializer
  */
-class FormElementAwareInitializer implements InitializerInterface
+class FormElementInitializer implements InitializerInterface
 {
     /**
      * Initialize the given instance
@@ -44,7 +43,7 @@ class FormElementAwareInitializer implements InitializerInterface
 
     /**
      * @param $an_array
-     * @return FormElementAwareInitializer
+     * @return FormElementInitializer
      */
     public static function __set_state($an_array)
     {
