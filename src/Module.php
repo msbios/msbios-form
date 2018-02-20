@@ -12,11 +12,14 @@ use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 
 /**
  * Class Module
- * @package MSBios\Voting
+ * @package MSBios\Form
  */
-class Module implements ModuleInterface, AutoloaderProviderInterface
+class Module implements
+    ModuleInterface,
+    AutoloaderProviderInterface
 {
-    const VERSION = '1.0.6';
+    /** @const VERSION */
+    const VERSION = '1.0.7';
 
     /**
      * Returns configuration to merge with application configuration
