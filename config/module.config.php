@@ -7,13 +7,7 @@
 namespace MSBios\Form;
 
 return [
-
-    // 'service_manager' => [
-    //     'initializers' => [
-    //         new Initializer\FormInitializer
-    //     ]
-    // ],
-
+    
     Module::class => [
 
     ]
