@@ -3,24 +3,22 @@
  * @access protected
  * @author Judzhin Miles <info[woof-woof]msbios.com>
  */
-namespace MSBios\Form\Initializer;
+namespace MSBios\Form;
 
 use Interop\Container\ContainerInterface;
-use MSBios\Form\FormElementManagerAwareInterface;
 use Zend\ServiceManager\Initializer\InitializerInterface;
 
 /**
  * Class FormElementManagerInitializer
- * @package MSBios\Form\Initializer
+ * @package MSBios\Form
  */
 class FormElementManagerInitializer implements InitializerInterface
 {
     /**
-     * Initialize the given instance
+     * @inheritdoc
      *
-     * @param  ContainerInterface $container
-     * @param  object $instance
-     * @return void
+     * @param ContainerInterface $container
+     * @param object $instance
      */
     public function __invoke(ContainerInterface $container, $instance)
     {
@@ -32,6 +30,8 @@ class FormElementManagerInitializer implements InitializerInterface
     }
 
     /**
+     * @inheritdoc
+     *
      * @param $an_array
      * @return FormElementManagerInitializer
      */

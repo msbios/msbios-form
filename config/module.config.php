@@ -7,8 +7,7 @@
 namespace MSBios\Form;
 
 return [
-
     Module::class => [
-
+        // ...
     ]
 ];

@@ -28,7 +28,6 @@
     "msbios/msbios": "^1.0"
   },
   "require-dev": {
-    "msbios/application": "^1.0",
     "msbios/test": "^1.0",
     "msbios/debug": "^1.0"
   },
@@ -39,7 +38,6 @@
       "@cs-check",
       "phpunit --colors=always"
     ],
-    "commit": "git add . && git commit -a -m \"Lazy Composer Commiter\" && git push",
     "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
     "upload-coverage": "coveralls -v"
   },
