@@ -24,7 +24,7 @@
     }
   },
   "require": {
-    "zendframework/zend-form": "^2.10",
+    "zendframework/zend-form": "^2.14",
     "msbios/inputfilter": "^1.0"
   },
   "require-dev": {
