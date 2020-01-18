@@ -24,12 +24,12 @@
     }
   },
   "require": {
-    "zendframework/zend-form": "^2.14",
-    "msbios/inputfilter": "^1.0"
+    "laminas/laminas-form": "^2.14",
+    "msbios/inputfilter": "^2.0"
   },
   "require-dev": {
-    "msbios/test": "^1.0",
-    "msbios/debug": "^1.0"
+    "msbios/test": "^2.0",
+    "msbios/debug": "^2.0"
   },
   "scripts": {
     "cs-check": "phpcs",
